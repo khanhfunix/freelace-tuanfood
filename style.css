@@ -10,24 +10,31 @@ body {
   position: relative;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .wrapper {
   padding: 0 100px;
 }
 
 /* NAVIGATION */
 
-#navigation {
+.navigation {
   position: fixed;
-  overflow: hidden;
+
   top: 0;
   width: 100%;
   padding: 5px 40px;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  z-index: 100;
   background-color: #fff;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  /* color: white; */
 }
 
 #logo {
@@ -37,7 +44,7 @@ body {
   align-items: flex-start;
 }
 
-#navigation-tabs {
+.navigation-tabs {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -45,24 +52,109 @@ body {
 }
 
 .tab {
-  font-size: 24px;
-  color: #333;
-  font-weight: 550;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333333;
+  position: relative;
+}
+
+.tab::after {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.1);
+  content: "";
+
+  opacity: 0;
+}
+
+.underline-animation {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.1);
+
+  opacity: 0;
+}
+
+.tab:hover {
+  cursor: pointer;
+  color: #7264ae;
+}
+
+.tab:hover .underline-animation {
+  opacity: 100%;
+  bottom: -6px;
+  height: 2px;
+  background-color: #7264ae;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translateY(-2px);
+}
+
+.drop-down {
+  display: none;
+  position: absolute;
+  bottom: -650%;
+  background-color: #fff;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  padding: 5px 0 10px 20px;
+  color: #333333;
+}
+
+.drop-down p {
+  font-size: 14px;
+  color: #333333;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.drop-down p:hover {
+  color: #7264ae;
+}
+
+.tab:hover .drop-down {
+  display: block;
+}
+
+.nav-home {
+  background-color: transparent;
+
+  top: 10px;
+}
+
+.tab-home {
+  color: black;
 }
 
 /* HEADER */
 #header {
-  background-color: #5555a5;
+  height: 100vh;
+  background-image: linear-gradient(black, white);
+  background-image: url("https://img.freepik.com/premium-photo/white-raw-rice-bowl-with-ear-wooden-table-background_315337-4995.jpg");
+  background-size: cover;
   font-family: Helvetica;
-  color: #fff;
-  margin-top: 60px;
+  /* color: #333333; */
+
   text-align: center;
   font-weight: bold;
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  opacity: 0, 5;
 }
 
 .header-text {
+  /* background-color: #5555a5; */
+  background-color: transparent;
   padding: 20px 40px;
+  opacity: 1;
 }
 
 .header-text p {
@@ -93,16 +185,45 @@ body {
 
   text-align: center;
 }
+.product-list-line {
+  /* border: 0.5px solid #dfdedf; */
+
+  gap: 1px;
+}
+
+.product {
+  text-align: center;
+}
+
+.product p {
+  margin-top: 10px;
+}
+
+.product-line {
+  /* border: 0.5px solid #dfdedf; */
+  padding: 10px 10px;
+  outline: 1px solid #dfdedf;
+  z-index: 1;
+}
+.product-line:hover {
+  outline: 1px solid black;
+  z-index: 2;
+}
 
 .service-text {
-  margin-top: 10px;
+  font-size: 20px;
+  margin-top: 20px;
   margin-left: 5px;
   line-height: 1.5;
 }
 
+.navigate-product:hover {
+  cursor: pointer;
+}
+
 /* CONTACT INPUT */
 #contact-input {
-  margin-top: 50px;
+  margin-top: 150px;
   padding: 40px 50px;
   background-color: #5555a5;
   color: #fff;
@@ -145,6 +266,8 @@ body {
   cursor: pointer;
   opacity: 80%;
 }
+
+/* FOOTTER */
 
 #footer {
   width: 100%;

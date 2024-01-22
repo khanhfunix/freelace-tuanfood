@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Our product</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <div id="logo">
+        <img
+          src="./asset/tuans-foods-high-resolution-logo-transparent.png"
+          alt="logo"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div class="navigation-tabs">
+        <div onclick="switchToHomePage()" class="tab tab1">
+          <p>ABOUT US / HOME</p>
+          <div class="underline-animation"></div>
+        </div>
+
+        <div onclick="switchToProductPage()" class="tab tab2">
+          <p>PRODUCTS</p>
+          <div class="underline-animation"></div>
+          <div class="drop-down">
+            <p>
+              <a onclick="switchToRicePage()" href="./rice.html"
+                >Rice & Grain</a
+              >
+            </p>
+            <p>
+              <a href="./juice.html" onclick="switchToJuicePage()"
+                >Fruits & Juices</a
+              >
+            </p>
+            <p>
+              <a href="./frozenfood.html" onclick="switchToFrozenFoodPage()"
+                >Frozen Food</a
+              >
+            </p>
+            <p>
+              <a href="./service.html" onclick="switchToServicePage()"
+                >Sourcing services</a
+              >
+            </p>
+          </div>
+        </div>
+        <div onclick="switchToContactPage()" class="tab tab3">
+          <a href="">CONTACT</a>
+          <div class="underline-animation"></div>
+        </div>
+      </div>
+    </nav>
+    <!-- <header id="header"></header> -->
+    <div class="wrapper" style="margin-top: 100px">
+      <section id="product">
+        <h2>FRUITS AND JUICE</h2>
+        <h3 style="font-weight: lighter; margin-top: 10px">
+          Coconut products :
+        </h3>
+        <div class="products-list product-list-line">
+          <div class="product product-1 product-line">
+            <img
+              src="https://www.commercefoods.com/cdn/shop/products/EasternFeast-BasilSeedDrink_4Pack_Pomegranate_180x.jpg?v=1634068089"
+              alt=""
+              width="200"
+              height="300"
+            />
+            <p>Fresh Young Coconut</p>
+          </div>
+          <div class="product product-2 product-line">
+            <img
+              src="https://www.commercefoods.com/cdn/shop/products/EasternFeastPassionFruit_180x.jpg?v=1634067268"
+              alt=""
+              width="200"
+              height="300"
+            />
+            <p>Organic Coconut milk</p>
+          </div>
+          <div class="product product-3 product-line">
+            <img
+              src="https://www.commercefoods.com/cdn/shop/products/EasternFeast-BasilSeedDrink_4Pack_Mango_180x.jpg?v=1634063164"
+              alt=""
+              width="200"
+              height="300"
+            />
+            <p>Organic Virgin Coconut oil</p>
+          </div>
+          <div class="product product-3 product-line">
+            <img
+              src="https://www.commercefoods.com/cdn/shop/products/Basil_AloeVera_180x.jpg?v=1597856090"
+              alt=""
+              width="200"
+              height="300"
+            />
+            <p>Organic Virgin Coconut oil</p>
+          </div>
+        </div>
+        <h3 style="font-weight: lighter; margin-top: 10px">Juice products :</h3>
+        <div class="products-list product-list-line">
+          <div class="product product-1 product-line">
+            <img
+              src="https://www.commercefoods.com/cdn/shop/products/Zarrin-RoseWater_10Oz_180x.jpg?v=1632862348"
+              alt=""
+              width="200"
+              height="300"
+            />
+            <p>Sparkling Coconut Water</p>
+          </div>
+          <div class="product product-2 product-line">
+            <img
+              src="https://www.commercefoods.com/cdn/shop/products/Zarrin-PomegranateMolasses_10FlOz_180x.jpg?v=1632861856"
+              alt=""
+              width="200"
+              height="300"
+            />
+            <p>
+              Juice Concentrate (Passion fruit, Pineapple, Dragon fruit,
+              mangosteen, Lychee)
+            </p>
+          </div>
+          <div class="product product-3 product-line">
+            <img
+              src="https://www.commercefoods.com/cdn/shop/products/Zarrin-OrangeBlossomWater_10oz_180x.jpg?v=1632861303"
+              alt=""
+              width="200"
+              height="300"
+            />
+            <p>NFC Juice</p>
+          </div>
+          <div class="product product-3 product-line">
+            <img
+              src="https://www.commercefoods.com/cdn/shop/products/Cortasorangewater_ec1c0737-d380-4861-bd1f-0eea7ba52b34_180x.png?v=1622664400"
+              alt=""
+              width="200"
+              height="300"
+            />
+            <p>Puree</p>
+          </div>
+          <div class="product product-3 product-line">
+            <img
+              src="https://www.commercefoods.com/cdn/shop/products/Cortasrosewater_180x.jpg?v=1622665045"
+              alt=""
+              width="200"
+              height="300"
+            />
+            <p>Puree Concentrate</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer id="footer">
+      <img
+        src="./asset/tuans-foods-high-resolution-logo.png"
+        alt="logo-footer"
+        width="200"
+        height="200"
+      />
+      <div class="footer-text">
+        <h1>TUAN FOODS</h1>
+        <h1>TUYET HUONG TMDV CO., LTD</h1>
+        <p>169C Street No#1, Binh Thanh District, HCM City, Vietnam.</p>
+        <p>Email: foods@tuanfoods.com</p>
+        <p>Phone/WhatsApp: +84 938143 543</p>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Our product</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <div id="logo">
+        <img
+          src="./asset/tuans-foods-high-resolution-logo-transparent.png"
+          alt="logo"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div class="navigation-tabs">
+        <div onclick="switchToHomePage()" class="tab tab1">
+          <p>ABOUT US / HOME</p>
+          <div class="underline-animation"></div>
+        </div>
+
+        <div onclick="switchToProductPage()" class="tab tab2">
+          <p>PRODUCTS</p>
+          <div class="underline-animation"></div>
+          <div class="drop-down">
+            <p>
+              <a onclick="switchToRicePage()" href="./rice.html"
+                >Rice & Grain</a
+              >
+            </p>
+            <p>
+              <a href="./juice.html" onclick="switchToJuicePage()"
+                >Fruits & Juices</a
+              >
+            </p>
+            <p>
+              <a href="./frozenfood.html" onclick="switchToFrozenFoodPage()"
+                >Frozen Food</a
+              >
+            </p>
+            <p>
+              <a href="./service.html" onclick="switchToServicePage()"
+                >Sourcing services</a
+              >
+            </p>
+          </div>
+        </div>
+        <div onclick="switchToContactPage()" class="tab tab3">
+          <a href="">CONTACT</a>
+          <div class="underline-animation"></div>
+        </div>
+      </div>
+    </nav>
+    <!-- <header id="header"></header> -->
+    <div class="wrapper" style="margin-top: 100px">
+      <section id="product">
+        <h1>Shop by Category</h1>
+        <div class="products-list">
+          <div
+            class="navigate-product product product-1"
+            onclick="switchToRicePage()"
+          >
+            <img src="./asset/rice_300x.webp" alt="" width="250" height="250" />
+            <p>Rice & Grain</p>
+          </div>
+          <div
+            class="navigate-product product product-2"
+            onclick="switchToJuicePage()"
+          >
+            <img
+              src="https://www.commercefoods.com/cdn/shop/products/EasternFeast-BasilSeedDrink_4Pack_Pomegranate_180x.jpg?v=1634068089"
+              alt=""
+              width="250"
+              height="250"
+            />
+            <p>Fruit and Juices</p>
+          </div>
+          <div
+            class="navigate-product product product-3"
+            onclick="switchToFrozenFoodPage()"
+          >
+            <img
+              src="https://www.commercefoods.com/cdn/shop/collections/Ready_to_eat_180x.png?v=1652829429"
+              alt=""
+              width="250"
+              height="250"
+            />
+            <p>Frozen Food</p>
+          </div>
+          <div
+            class="navigate-product product product-3"
+            onclick="switchToServicePage()"
+          >
+            <img src="./asset/rice_300x.webp" alt="" width="250" height="250" />
+            <p>Sourcing Services</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer id="footer">
+      <img
+        src="./asset/tuans-foods-high-resolution-logo.png"
+        alt="logo-footer"
+        width="200"
+        height="200"
+      />
+      <div class="footer-text">
+        <h1>TUAN FOODS</h1>
+        <h1>TUYET HUONG TMDV CO., LTD</h1>
+        <p>169C Street No#1, Binh Thanh District, HCM City, Vietnam.</p>
+        <p>Email: foods@tuanfoods.com</p>
+        <p>Phone/WhatsApp: +84 938143 543</p>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

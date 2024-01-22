@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Rice & Grain</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <div id="logo">
+        <img
+          src="./asset/tuans-foods-high-resolution-logo-transparent.png"
+          alt="logo"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div class="navigation-tabs">
+        <div onclick="switchToHomePage()" class="tab tab1">
+          <p>ABOUT US / HOME</p>
+          <div class="underline-animation"></div>
+        </div>
+
+        <div onclick="switchToProductPage()" class="tab tab2">
+          <p>PRODUCTS</p>
+          <div class="underline-animation"></div>
+          <div class="drop-down">
+            <p>
+              <a onclick="switchToRicePage()" href="./rice.html"
+                >Rice & Grain</a
+              >
+            </p>
+            <p>
+              <a href="./juice.html" onclick="switchToJuicePage()"
+                >Fruits & Juices</a
+              >
+            </p>
+            <p>
+              <a href="./frozenfood.html" onclick="switchToFrozenFoodPage()"
+                >Frozen Food</a
+              >
+            </p>
+            <p>
+              <a href="./service.html" onclick="switchToServicePage()"
+                >Sourcing services</a
+              >
+            </p>
+          </div>
+        </div>
+        <div onclick="switchToContactPage()" class="tab tab3">
+          <a href="">CONTACT</a>
+          <div class="underline-animation"></div>
+        </div>
+      </div>
+    </nav>
+    <!-- <header id="header"></header> -->
+    <div class="wrapper" style="margin-top: 100px">
+      <section id="product">
+        <h2>RICE & GRAIN</h2>
+        <h3 style="font-weight: lighter; margin-top: 10px">
+          We’re supplying Organic and Conventional Rice Variety as below:
+        </h3>
+        <div class="products-list product-list-line">
+          <div class="product product-1 product-line">
+            <img
+              src="https://www.commercefoods.com/cdn/shop/files/himalayan-rice-thumb_180x.png?v=1691596857"
+              alt=""
+              width="200"
+              height="300"
+            />
+            <p>Short Grain Rice: Japonica (sushi rice)</p>
+          </div>
+          <div class="product product-2 product-line">
+            <img
+              src="https://www.commercefoods.com/cdn/shop/products/sHAN10_180x.png?v=1620148256"
+              alt=""
+              width="200"
+              height="300"
+            />
+            <p>Long Grain Rice: Jasmine, ST25</p>
+          </div>
+          <div class="product product-3 product-line">
+            <img
+              src="https://www.commercefoods.com/cdn/shop/products/Khazana10lb_180x.png?v=1620134795"
+              alt=""
+              width="200"
+              height="300"
+            />
+            <p>Healthy Rice: Red, Brown & Rice</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer id="footer">
+      <img
+        src="./asset/tuans-foods-high-resolution-logo.png"
+        alt="logo-footer"
+        width="200"
+        height="200"
+      />
+      <div class="footer-text">
+        <h1>TUAN FOODS</h1>
+        <h1>TUYET HUONG TMDV CO., LTD</h1>
+        <p>169C Street No#1, Binh Thanh District, HCM City, Vietnam.</p>
+        <p>Email: foods@tuanfoods.com</p>
+        <p>Phone/WhatsApp: +84 938143 543</p>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

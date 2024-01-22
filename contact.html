@@ -3,26 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Tuan Food</title>
+    <link rel="stylesheet" href="../style.css" />
+    <title>Contact</title>
   </head>
   <body>
-    <nav class="navigation nav-home">
+    <nav class="navigation">
       <div id="logo">
         <img
           src="./asset/tuans-foods-high-resolution-logo-transparent.png"
           alt="logo"
-          width="80"
-          height="80"
+          width="60"
+          height="60"
         />
       </div>
       <div class="navigation-tabs">
-        <div onclick="switchToHomePage()" class="tab tab-home">
+        <div onclick="switchToHomePage()" class="tab tab1">
           <p>ABOUT US / HOME</p>
           <div class="underline-animation"></div>
         </div>
 
-        <div onclick="switchToProductPage()" class="tab tab-home">
+        <div onclick="switchToProductPage()" class="tab tab2">
           <p>PRODUCTS</p>
           <div class="underline-animation"></div>
           <div class="drop-down">
@@ -48,36 +48,37 @@
             </p>
           </div>
         </div>
-        <div onclick="switchToContactPage()" class="tab tab-home">
+        <div onclick="switchToContactPage()" class="tab tab3">
           <a href="">CONTACT</a>
           <div class="underline-animation"></div>
         </div>
       </div>
     </nav>
-
-    <header id="header">
-      <div class="header-text">
-        <h1>WELCOME TO TUAN FOODS</h1>
+    <section id="contact-input">
+      <div class="info-text">
+        <h1>WHY CHOOSE US?</h1>
         <p>
-          Tuan Food is a family-owned, Food & Beverage Manufacturer and Supplier
-          offering Rice & Grain, Fruit & Juice and Frozen Seafoods to whole
-          seller, retailer, supermarket in the foods industries in Asia, US, UAE
-          and EU market. The company also imports, exports, and distributes a
-          wide range of Fruit Juice Concentrates, Flavor, Fragrance, and Food
-          Ingredients through a network of manufacturer throughout Asia, Mexico
-          and EU. Our excellent and diverse trade relationships allow us to
-          locate items that are unavailable to other companies. The company
-          prides itself on being able to execute orders on a prompt basis
-          providing necessary relevant certifications on a timely basis. We
-          would be pleased to supply you with current market quotes and
-          information.
+          We believe the trust is priority for all business. So, we build
+          ourself based on that. We also have enough experience and full
+          liability coverage when work with our partners, customers.
         </p>
-        <p>Email us: foods@tuanfoods.com</p>
-        <p>WhatsApp: +84 938143 534</p>
       </div>
-    </header>
+      <div class="input-form">
+        <h1>CONTACT US</h1>
+        <form class="form" method="post" onsubmit="submitForm()">
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="ENTER YOUR EMAIL"
+          />
 
-    <!-- <footer id="footer" style="margin-top: 0">
+          <button id="submit-btn" type="submit">SEND</button>
+        </form>
+      </div>
+    </section>
+
+    <footer id="footer">
       <img
         src="./asset/tuans-foods-high-resolution-logo.png"
         alt="logo-footer"
@@ -91,7 +92,7 @@
         <p>Email: foods@tuanfoods.com</p>
         <p>Phone/WhatsApp: +84 938143 543</p>
       </div>
-    </footer> -->
+    </footer>
+    <script src="../script.js"></script>
   </body>
-  <script src="./script.js"></script>
 </html>

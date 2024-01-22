@@ -3,26 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Tuan Food</title>
+    <link rel="stylesheet" href="../style.css" />
+    <title>Our product</title>
   </head>
   <body>
-    <nav class="navigation nav-home">
+    <nav class="navigation">
       <div id="logo">
         <img
           src="./asset/tuans-foods-high-resolution-logo-transparent.png"
           alt="logo"
-          width="80"
-          height="80"
+          width="60"
+          height="60"
         />
       </div>
       <div class="navigation-tabs">
-        <div onclick="switchToHomePage()" class="tab tab-home">
+        <div onclick="switchToHomePage()" class="tab tab1">
           <p>ABOUT US / HOME</p>
           <div class="underline-animation"></div>
         </div>
 
-        <div onclick="switchToProductPage()" class="tab tab-home">
+        <div onclick="switchToProductPage()" class="tab tab2">
           <p>PRODUCTS</p>
           <div class="underline-animation"></div>
           <div class="drop-down">
@@ -48,36 +48,29 @@
             </p>
           </div>
         </div>
-        <div onclick="switchToContactPage()" class="tab tab-home">
+        <div onclick="switchToContactPage()" class="tab tab3">
           <a href="">CONTACT</a>
           <div class="underline-animation"></div>
         </div>
       </div>
     </nav>
-
-    <header id="header">
-      <div class="header-text">
-        <h1>WELCOME TO TUAN FOODS</h1>
-        <p>
-          Tuan Food is a family-owned, Food & Beverage Manufacturer and Supplier
-          offering Rice & Grain, Fruit & Juice and Frozen Seafoods to whole
-          seller, retailer, supermarket in the foods industries in Asia, US, UAE
-          and EU market. The company also imports, exports, and distributes a
-          wide range of Fruit Juice Concentrates, Flavor, Fragrance, and Food
-          Ingredients through a network of manufacturer throughout Asia, Mexico
-          and EU. Our excellent and diverse trade relationships allow us to
-          locate items that are unavailable to other companies. The company
-          prides itself on being able to execute orders on a prompt basis
-          providing necessary relevant certifications on a timely basis. We
-          would be pleased to supply you with current market quotes and
-          information.
+    <!-- <header id="header"></header> -->
+    <div class="wrapper" style="margin-top: 100px">
+      <section id="product">
+        <h1 style="margin-top: 100px">SOURCING SERVICES</h1>
+        <p class="service-text">
+          We have more than 10 years’ worth of combined food manufacturing in
+          our sourcing offices. We also specialize in the sourcing of the
+          highest quality food products or ingredients from processors around
+          Vietnam and other Asian countries. With experience serving the food
+          and beverage industries, we have cultivated relationships with many of
+          the best manufacturers of a broad range of foods. We work hard to
+          anticipate future trends and help our customers develop products that
+          excite the palates of their final customers.
         </p>
-        <p>Email us: foods@tuanfoods.com</p>
-        <p>WhatsApp: +84 938143 534</p>
-      </div>
-    </header>
-
-    <!-- <footer id="footer" style="margin-top: 0">
+      </section>
+    </div>
+    <footer id="footer">
       <img
         src="./asset/tuans-foods-high-resolution-logo.png"
         alt="logo-footer"
@@ -91,7 +84,7 @@
         <p>Email: foods@tuanfoods.com</p>
         <p>Phone/WhatsApp: +84 938143 543</p>
       </div>
-    </footer> -->
+    </footer>
+    <script src="../script.js"></script>
   </body>
-  <script src="./script.js"></script>
 </html>
